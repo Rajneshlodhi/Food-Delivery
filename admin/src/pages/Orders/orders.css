@@ -1,0 +1,121 @@
+/* .order-item{
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+}
+.order-item-food , .order-item-name{
+    font-weight: 600;
+}
+.order-item-name{
+    margin-top: 30px;
+    margin-bottom: 5px;
+
+}
+.order-item-address{
+    margin-bottom: 10px;
+}
+.order-item select{
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    width: max(10vw, 120px);
+    padding: 10px;
+outline: none;
+
+} */
+
+
+.order {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.order h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.order-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.order-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-5px);
+}
+
+.order-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.order-item-food {
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.order-item-name {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.order-item-address p,
+.order-item-phone {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.order-item select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
+}
+
+.order-item select:focus {
+  outline: none;
+  border-color: #ff5722;
+}
+
+.order-item p {
+  margin: 4px 0;
+}
+
+@media(max-width:1000px){
+    .order-item{
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 8px;
+    }
+    .order-item select{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .order-item img{
+        width: 40px;
+    }
+}

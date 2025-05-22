@@ -1,0 +1,127 @@
+/* .my-orders {
+    margin: 50px 0px;
+}
+
+.my-orders .container {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.my-orders-order {
+    display: grid;
+
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: #454545;
+    border: 1px solid tomato;
+}
+
+.my-orders-order img {
+    width: 50px;
+}
+
+.my-orders-order p span {
+    color: tomato;
+}
+
+.my-orders-order p b {
+    font-weight: 500;
+    color: #454545;
+}
+
+.my-orders-order button {
+    border: none;
+    padding: 12px 0px;
+
+    border-radius: 4px;
+    background-color: #ffe1e1;
+    cursor: pointer;
+    color: #454545;
+} */
+ .my-orders {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my-orders h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.my-orders .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.my-orders-order {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  transition: transform 0.2s ease;
+}
+
+.my-orders-order:hover {
+  transform: translateY(-5px);
+}
+
+.my-orders-order img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.my-orders-order p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.my-orders-order span {
+  color: green;
+  font-size: 1rem;
+}
+
+.my-orders-order button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-orders-order button:hover {
+  background-color: #e64a19;
+}
+
+
+
+
+@media(max-width:900) {
+    .my-orders-order {
+        grid-template-columns: 1fr 2fr 1fr;
+        row-gap: 5px;
+        font-size: 12px;
+    }
+
+    .my-orders-order button {
+        font-size: 10px;
+    }
+}
