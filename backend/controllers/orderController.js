@@ -8,7 +8,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 const placeholder = async (req, res) => {
 
    
-    const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
+    const frontend_url = process.env.FRONTEND_URL || "https://food-delivery-frontend-1ezb.onrender.com/";
 
 
     try {
